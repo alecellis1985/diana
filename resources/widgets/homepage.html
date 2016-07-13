@@ -99,8 +99,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-6 col-sm-4" ng-repeat="client in clients">
-            <img ng-src="{{client.src}}" alt="client.alt"/>
+        <div class="col-xs-6 col-sm-4" ng-repeat="client in vm.clients">
+            <img ng-src="{{client.src}}" alt="{{client.alt}}"/>
         </div>
     </div>
 </section>
