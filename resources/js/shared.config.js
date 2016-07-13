@@ -14,9 +14,6 @@
             $urlMatcherFactoryProvider.strictMode(false);
 
             setupBlockUI(blockUIConfig);
-
-            
-            //
             // Now set up the states
             $stateProvider
                     .state('index', {
