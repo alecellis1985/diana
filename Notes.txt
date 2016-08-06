@@ -1,0 +1,1 @@
+CDN Libgs: https://developers.google.com/speed/libraries/#angularjs

@@ -1,152 +1,178 @@
-<section>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <h1>
-                FAST & <br />
-                RELIABLE <br />
-                REAL-TIME <br />
-                DATA
-            </h1>
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-            <img src="../images/img7.jpg" alt="Arch House"/>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <h1>
-                HOW IT <br />
-                WORKS    
-            </h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="howItworks in vm.howitworksarr">
+<section id="home">
+    <div class="red-bg">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <h1>{{'0' + $index}}</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <h3>{{howItworks.subtitle}}</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>{{howItworks.paragraph}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <img src="../images/container1.jpg" alt=""/>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <h1>
-                MEET <br />
-                POLYSTAT    
-            </h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="row">
-                <div class="col-xs-4">
-                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                </div>
-                <div class="col-xs-8">
-                    <h3>Our Story</h3>
-                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you. This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4">
-                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                </div>
-                <div class="col-xs-8">
-                    <h3>Our Story</h3>
-                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you. This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4">
-                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                </div>
-                <div class="col-xs-8">
-                    <h3>Our Story</h3>
-                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you. This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company.</p>
+                <div class="col-xs-12 col-sm-6">
+                    <h1>
+                        What <br />
+                        Is <br />
+                        planB?
+                    </h1>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <h1>
-                OUR <br />
-                CLIENTS    
-            </h1>
+<section  id="product">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h1>
+                    Why <br />
+                    us?
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <slick slides-to-show=3 slides-to-scroll=3 init-onload=true data="vm.howitworksarr" class="slider multiple-items">
+                <div class="col-xs-12 col-sm-6 col-md-4 animated fadeInLeft" ng-repeat="howItworks in vm.howitworksarr">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img ng-if="howItworks.img" ng-src="{{howItworks.img}}"/>
+                            <i ng-if="!howItworks.img" class="fa fa-line-chart" aria-hidden="true"></i>
+                            <!--<span class="bigNumber"></span>-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>{{howItworks.title}}</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>{{howItworks.paragraph}}</p>
+                        </div>
+                    </div>
+                </div>
+            </slick>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-6 col-sm-4" ng-repeat="client in vm.clients">
-            <img ng-src="{{client.src}}" alt="{{client.alt}}"/>
+</section>
+<section  id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h1>
+                    MEET <br />
+                    POLYSTAT    
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 story">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3>Our Story</h3>
+                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you. This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3>Our Story</h3>
+                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you. This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3>Our Story</h3>
+                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you. This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section  id="featured">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h1>
+                    OUR <br />
+                    CLIENTS    
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4" ng-repeat="client in vm.clients">
+                <img ng-src="{{client.src}}" alt="{{client.alt}}" width="100"/>
+            </div>
+        </div>
+    </div>
+</section>
+<section  id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h1>
+                    STAY IN <br />
+                    TOUCH    
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <h5>info@abfabf.com</h5>
+                <h5>info@abfabf.com</h5>
+            </div>
+            <div class="col-xs-4">
+                <h5>Tel: 352-235-7890</h5>
+                <h5>Fax: 352-235-7890</h5>
+            </div>
+            <div class="col-xs-4">
+                <h5>500 Terry Francois St.</h5>
+                <h5>San Francisco, CA 94158</h5>
+            </div>
         </div>
     </div>
 </section>
 <section>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <h1>
-                STAY IN <br />
-                TOUCH    
-            </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h1>
+                    REQUEST <br />
+                    DEMO  
+                </h1>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-4">
-            <h5>info@abfabf.com</h5>
-            <h5>info@abfabf.com</h5>
-        </div>
-        <div class="col-xs-4">
-            <h5>Tel: 352-235-7890</h5>
-            <h5>Fax: 352-235-7890</h5>
-        </div>
-        <div class="col-xs-4">
-            <h5>500 Terry Francois St.</h5>
-            <h5>San Francisco, CA 94158</h5>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <h1>
-                REQUEST <br />
-                DEMO  
-            </h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-4">
-            <h5 style="line-height: 1.4em;font: normal normal normal 24px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;color: #00C8DC;">To schedule a product demo with one of our product consultants, please fill in your contact details</h5>
-        </div>
-        <div class="col-xs-12 col-sm-8">
-            <form>
-                <input type="email" placeholder="Email" />
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <h5 style="line-height: 1.4em;font: normal normal normal 24px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;color: #00C8DC;">To schedule a product demo with one of our product consultants, please fill in your contact details</h5>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <form>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="input-group-lg">
+                                <input type="email" class="form-control" placeholder="Email"><br />
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="8" id="comment" placeholder="Message"></textarea>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="btn-group btn-group-lg pull-right" role="group">
+                                <button type="submit" class="btn btn-info">Send</button>
+                            </div>
+                        </div>    
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>

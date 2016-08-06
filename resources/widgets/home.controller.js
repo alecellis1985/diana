@@ -1,31 +1,54 @@
 (function () {
     'use strict';
     angular.module('shared').controller('homeCtrl', homeCtrl);
-    homeCtrl.$inject = [];
-    function homeCtrl() {
+    homeCtrl.$inject = ['$translate'];
+    function homeCtrl($translate) {
         var vm = this;
+        
+        vm.changeLanguage = function (langKey) {
+            $translate.use(langKey);
+        };
+        
         vm.howitworksarr = [{
-                subtitle: 'Fast',
-                paragraph: 'Im a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.'
+                img:'',
+                title: 'Grow your business',
+                paragraph: 'We offer high quality cost effective service, allowing you to take in more work load.'
             },
             {
-                subtitle: 'Secure',
-                paragraph: 'Im a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.'
+                img:'resources/images/icons/knowhow.png',
+                title: 'Know How',
+                paragraph: 'Despite of being a foreign company, we have the required technical knowledge regarding building code, construction method, work methodology and cultural parameters of your country.'
             }, {
-                subtitle: 'Easy',
-                paragraph: 'Im a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.'
+                img:'resources/images/icons/tw.png',
+                title: 'EXCELLENT TEAMWORK',
+                paragraph: 'Our team includes trained professionals, with adaptation to change, excellent level of English language and great knowledge of design tools.'
+            }, {
+                img:'resources/images/icons/comunication.png',
+                title: 'GREAT COMMUNICATION',
+                paragraph: 'Distance is only theoretical. We provide constant communication by e-mail, online meetings, phone calls, conference calls. We can assure full availability during your working hours, as the time difference is almost unnoticeable.'
+            }, {
+                img:'resources/images/icons/worldx2.png',
+                title: 'OPTIMAL CONNECTION',
+                paragraph: 'Uruguay is one of the countries with best internet downloading speed, which is a great benefit when it comes to communication and file sharing.'
             }
         ];
         vm.clients = [{
-                src: '../images/image.png',
+                src: '/resources/images/image.png',
                 alt: 'Architecture'
             },
             {
-                src: '../images/img.png',
+                src: '/resources/images/img.jpg',
                 alt: 'Architecture'
             }, {
-                src: '../images/img3.png',
+                src: '/resources/images/img2.jpg',
                 alt: 'Architecture'
             }];
+        
+        init();
+        //Functions *
+        
+        function init(){
+            
+        }
     }
 })();
