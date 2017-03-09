@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^pb\-studio\.xtreamcoding\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.pb\-studio\.xtreamcoding\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^pb\-studio\.com$
+RewriteRule ^/?$ "http\:\/\/www\.pb\-studio\.com" [R=301,L]
+

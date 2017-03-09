@@ -1,0 +1,234 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 11, 2016, 5:58:38 AM
+    Author     : AlecE
+*/
+.delay {
+  animation-delay: 5s !important;
+  transition-delay: 5s !important;
+}
+.animation.ng-hide.ng-hide-add-active,
+.animation.ng-hide.ng-hide-remove-active {
+  display: block !important;
+}
+.animation.fadeIn.ng-hide-remove {
+  animation: 0.5s fadeInDown ease;
+}
+.animation.fadeInOut.ng-hide-add {
+  -moz-animation: 0.5s fadeOutUp ease;
+  -o-animation: 0.5s fadeOutUp ease;
+  -webkit-animation: 0.5s fadeOutUp ease;
+  animation: 0.5s fadeOutUp ease;
+}
+.animation.fadeInOut.ng-hide-remove {
+  -moz-animation: 0.5s fadeInDown ease;
+  -o-animation: 0.5s fadeInDown ease;
+  -webkit-animation: 0.5s fadeInDown ease;
+  animation: 0.5s fadeInDown ease;
+}
+.animation.rollInOut.ng-hide-add {
+  -moz-animation: 0.5s rollOut ease;
+  -o-animation: 0.5s rollOut ease;
+  -webkit-animation: 0.5s rollOut ease;
+  animation: 0.5s rollOut ease;
+}
+.animation.rollInOut.ng-hide-remove {
+  -moz-animation: 0.5s rollIn ease;
+  -o-animation: 0.5s rollIn ease;
+  -webkit-animation: 0.5s rollIn ease;
+  animation: 0.5s rollIn ease;
+}
+.animation.foldeInOut {
+  overflow: hidden;
+}
+.animation.foldeInOut.ng-hide-add,
+.animation.foldeInOut.ng-hide-remove {
+  -moz-transition: 0s linear all;
+  -o-transition: 0s linear all;
+  -webkit-transition: 0s linear all;
+  transition: 0s linear all;
+}
+.animation.foldeInOut.ng-hide-add-active,
+.animation.foldeInOut.ng-hide-remove-active {
+  -moz-transition: all linear 2.5s;
+  -o-transition: all linear 2.5s;
+  -webkit-transition: all linear 2.5s;
+  transition: all linear 2.5s;
+}
+.animation.foldeInOut.ng-hide-add {
+  max-height: 0;
+}
+.animation.flipXInOut.ng-hide-add {
+  -moz-animation: 0.7s flipOutX ease;
+  -o-animation: 0.7s flipOutX ease;
+  -webkit-animation: 0.7s flipOutX ease;
+  animation: 0.7s flipOutX ease;
+  margin-top: 0;
+}
+.animation.flipXInOut.ng-hide-remove {
+  -moz-animation: 0.7s flipInX ease;
+  -o-animation: 0.7s flipInX ease;
+  -webkit-animation: 0.7s flipInX ease;
+  animation: 0.7s flipInX ease;
+}
+.animation.fadeInUp.ng-hide-add {
+  display: none;
+}
+.animation.fadeInUp.ng-hide-remove {
+  -moz-animation: 1.4s slideInUp ease;
+  -o-animation: 1.4s slideInUp ease;
+  -webkit-animation: 1.4s slideInUp ease;
+  animation: 1.4s slideInUp ease;
+}
+.animation.slideUpDownNoHeight.ng-hide-add {
+  overflow-y: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.9s ease-in-out;
+  -moz-transition: max-height 0.9s ease-in-out;
+  -o-transition: max-height 0.9s ease-in-out;
+  transition: max-height 0.9s ease-in-out;
+  margin-top: 0;
+}
+.animation.slideUpDownNoHeight.ng-hide-remove {
+  -moz-animation: 0.5s slideInDown ease;
+  -o-animation: 0.5s slideInDown ease;
+  -webkit-animation: 0.5s slideInDown ease;
+  animation: 0.5s slideInDown ease;
+}
+.animation.slideUpDown.ng-hide-add {
+  -moz-animation: 0.5s slideOutUp ease;
+  -o-animation: 0.5s slideOutUp ease;
+  -webkit-animation: 0.5s slideOutUp ease;
+  animation: 0.5s slideOutUp ease;
+  margin-top: 0;
+}
+.animation.slideUpDown.ng-hide-remove {
+  -moz-animation: 0.5s slideInDown ease;
+  -o-animation: 0.5s slideInDown ease;
+  -webkit-animation: 0.5s slideInDown ease;
+  animation: 0.5s slideInDown ease;
+}
+.animation.zoomInOut.ng-hide-add {
+  -moz-animation: 0.5s zoomOut ease;
+  -o-animation: 0.5s zoomOut ease;
+  -webkit-animation: 0.5s zoomOut ease;
+  animation: 0.5s zoomOut ease;
+}
+.animation.zoomInOut.ng-hide-remove {
+  -moz-animation: 0.5s zoomIn ease;
+  -o-animation: 0.5s zoomIn ease;
+  -webkit-animation: 0.5s zoomIn ease;
+  animation: 0.5s zoomIn ease;
+}
+/*.animation.slideLeftRight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}*/
+.animation.slideLeftRight.ng-hide-remove {
+  -moz-animation: 0.5s fadeInRight ease;
+  -o-animation: 0.5s fadeInRight ease;
+  -webkit-animation: 0.5s fadeInRight ease;
+  animation: 0.5s fadeInRight ease;
+}
+.animation.slideLeftRight.ng-hide-add {
+  -moz-animation: 0.5s fadeOutLeft ease;
+  -o-animation: 0.5s fadeOutLeft ease;
+  -webkit-animation: 0.5s fadeOutLeft ease;
+  animation: 0.5s fadeOutLeft ease;
+}
+.animation.slideLeftRight.ng-hide-remove.backward {
+  -moz-animation: 0.5s fadeInLeft ease;
+  -o-animation: 0.5s fadeInLeft ease;
+  -webkit-animation: 0.5s fadeInLeft ease;
+  animation: 0.5s fadeInLeft ease;
+}
+.animation.slideLeftRight.ng-hide-add.backward {
+  -moz-animation: 0.5s fadeOutRight ease;
+  -o-animation: 0.5s fadeOutRight ease;
+  -webkit-animation: 0.5s fadeOutRight ease;
+  animation: 0.5s fadeOutRight ease;
+}
+.repeat-animation.zoomInOut.ng-enter-stagger {
+  -moz-animation-delay: 30ms;
+  -o-animation-delay: 30ms;
+  -webkit-animation-delay: 30ms;
+  animation-delay: 30ms;
+}
+.repeat-animation.zoomInOut.ng-enter {
+  -moz-animation: 200ms zoomIn ease;
+  -o-animation: 200ms zoomIn ease;
+  -webkit-animation: 200ms zoomIn ease;
+  animation: 200ms zoomIn ease;
+  /*animation: 550ms flipInX ease;*/
+  /*opacity: 0; doesn't work on IE */
+}
+.repeat-animation.zoomInOut.ng-enter.ng-enter-active {
+  /*opacity: 1; doesn't work on IE */
+}
+.repeat-animation.zoomInOut.ng-leave.with-leave-animation {
+  -moz-animation: 200ms zoomOut ease;
+  -o-animation: 200ms zoomOut ease;
+  -webkit-animation: 200ms zoomOut ease;
+  animation: 200ms zoomOut ease;
+}
+.repeat-animation.flip.ng-enter-stagger {
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  -moz-animation-duration: 0;
+  -o-animation-duration: 0;
+  -webkit-animation-duration: 0;
+  animation-duration: 0;
+}
+.repeat-animation.flip.ng-enter {
+  -webkit-animation: 0.7s flipInY ease;
+  -moz-animation: 0.7s flipInY ease;
+  -o-animation: 0.7s flipInY ease;
+  animation: 0.7s flipInY ease;
+  /*opacity: 0; doesn't work on IE */
+}
+.repeat-animation.flip.ng-enter.ng-enter-active {
+  /*opacity: 1; doesn't work on IE */
+}
+.repeat-animation.flip.ng-leave {
+  -webkit-animation: 0.7s flipOutY ease;
+  -moz-animation: 0.7s flipOutY ease;
+  -o-animation: 0.7s flipOutY ease;
+  animation: 0.7s flipOutY ease;
+}
+.repeat-animation.fadeInOut.ng-enter-stagger {
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  -moz-animation-duration: 0;
+  -o-animation-duration: 0;
+  -webkit-animation-duration: 0;
+  animation-duration: 0;
+}
+.repeat-animation.fadeInOut.ng-enter {
+  -webkit-animation: 0.7s fadeIn ease;
+  -moz-animation: 0.7s fadeIn ease;
+  -o-animation: 0.7s fadeIn ease;
+  animation: 0.7s fadeIn ease;
+  /*opacity: 0; doesn't work on IE */
+}
+.repeat-animation.fadeInOut.ng-enter.ng-enter-active {
+  /*opacity: 1; doesn't work on IE */
+}
+.repeat-animation.fadeInOut.ng-leave {
+  -webkit-animation: 0.7s fadeOut ease;
+  -moz-animation: 0.7s fadeOut ease;
+  -o-animation: 0.7s fadeOut ease;
+  animation: 0.7s fadeOut ease;
+}

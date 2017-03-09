@@ -1,1 +1,6 @@
-CDN Libgs: https://developers.google.com/speed/libraries/#angularjs
+CDN Libgs: https://developers.google.com/speed/libraries/#angularjs
+
+para usar el mapa: http://jvectormap.com/
+http://csshexagon.com/
+
+flippy: https://github.com/zwacky/angular-flippy
